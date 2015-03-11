@@ -125,10 +125,10 @@
   }
 }
 \details{The NN3 Competition's Dataset A contains 111 different monthly time series. Each of this time series possess from 50 to 126 observations.
-Each competitor in NN3 was asked to predict the next 18 corresponding observations of each times series. The performance evaluation done by NN3 Competition was based on the mean SMAPE error of prediction found by the competitors across all time series.
+Each competitor in NN3 was asked to predict the next 18 corresponding observations of each times series (\code{\link{NN3.A.cont}}). The performance evaluation done by NN3 Competition was based on the mean SMAPE error of prediction found by the competitors across all time series.
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
-\source{2007, The NN3 Competition: Forecasting competition for artificial neural networks and computational intelligence. URL: \url{http://www.neural-forecasting-competition.com/NN3/index.htm}.
+\source{NN3 2007, The NN3 Competition: Forecasting competition for artificial neural networks and computational intelligence. URL: \url{http://www.neural-forecasting-competition.com/NN3/index.htm}.
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
 }
 \references{S.F. Crone, M. Hibon, and K. Nikolopoulos, 2011, Advances in forecasting with neural networks? Empirical evidence from the NN3 competition on time series prediction, International Journal of Forecasting, v. 27, n. 3 (Jul.), p. 635-660.

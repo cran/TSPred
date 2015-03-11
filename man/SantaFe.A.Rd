@@ -14,7 +14,7 @@
     \item{\code{V1}}{a numeric vector containing the observations of the univariate time series A of the Santa Fe Time Series Competition.}
   }
 }
-\details{The main benchmark of the Santa Fe Time Series Competition, time series A, is composed of a clean low-dimensional nonlinear and stationary time series with 1,000 observations. Competitors were asked to correctly predict the next 100 observations. The performance evaluation done by the Santa Fe Competition was based on the NMSE errors of prediction found by the competitors.
+\details{The main benchmark of the Santa Fe Time Series Competition, time series A, is composed of a clean low-dimensional nonlinear and stationary time series with 1,000 observations. Competitors were asked to correctly predict the next 100 observations (\code{\link{SantaFe.A.cont}}). The performance evaluation done by the Santa Fe Competition was based on the NMSE errors of prediction found by the competitors.
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
 \source{The Santa Fe Time Series Competition Data, URL: \url{http://www-psych.stanford.edu/~andreas/Time-Series/SantaFe.html}.

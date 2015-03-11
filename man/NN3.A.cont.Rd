@@ -4,7 +4,7 @@
 \title{Continuation dataset of the Dataset A of the NN3 Competition
 %%   ~~ data name/kind ... ~~
 }
-\description{A dataset of univariate time series providing 18 points beyond the end of the time series on \code{\link{NN3.A}}.
+\description{A dataset of univariate time series providing 18 points beyond the end of the time series in \code{\link{NN3.A}}.
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
 \usage{data("NN3.A.cont")}
@@ -127,7 +127,7 @@
 \details{Contains the 18 observations which were to be predicted of each time series in Dataset A (\code{\link{NN3.A}}) as demanded by the NN3 Competition.
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
-\source{2007, The NN3 Competition: Forecasting competition for artificial neural networks and computational intelligence. URL: \url{http://www.neural-forecasting-competition.com/NN3/index.htm}.
+\source{NN3 2007, The NN3 Competition: Forecasting competition for artificial neural networks and computational intelligence. URL: \url{http://www.neural-forecasting-competition.com/NN3/index.htm}.
 %%  ~~ reference to a publication or URL from which the data were obtained ~~
 }
 \references{S.F. Crone, M. Hibon, and K. Nikolopoulos, 2011, Advances in forecasting with neural networks? Empirical evidence from the NN3 competition on time series prediction, International Journal of Forecasting, v. 27, n. 3 (Jul.), p. 635-660.

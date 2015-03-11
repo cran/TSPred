@@ -4,17 +4,17 @@
 \title{Continuation dataset of the time series A of the Santa Fe Time Series Competition
 %%   ~~ data name/kind ... ~~
 }
-\description{A univariate time series providing 100 points beyond the end of the time series A  on \code{\link{SantaFe.A}}.
+\description{A univariate time series providing 100 points beyond the end of the time series A  in \code{\link{SantaFe.A}}.
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
 \usage{data("SantaFe.A.cont")}
 \format{
   A data frame with 100 observations on the following variable.
   \describe{
-    \item{\code{V1}}{a numeric vector containing further observations of the univariate time series A of the Santa Fe Time Series Competition.}
+    \item{\code{V1}}{a numeric vector containing further observations of the univariate time series A of the Santa Fe Time Series Competition in \code{\link{SantaFe.A}}.}
   }
 }
-\details{Contains the 100 observations which were to be predicted of the time series A as demanded by the Santa Fe Time Series Competition.
+\details{Contains the 100 observations which were to be predicted of the time series A (\code{\link{SantaFe.A}}) as demanded by the Santa Fe Time Series Competition.
 %%  ~~ If necessary, more details than the __description__ above ~~
 }
 \source{The Santa Fe Time Series Competition Data, URL: \url{http://www-psych.stanford.edu/~andreas/Time-Series/SantaFe.html}.

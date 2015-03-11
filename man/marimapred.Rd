@@ -21,16 +21,16 @@ range.p = 0.2, ylab = NULL, xlab = NULL, main = NULL)
   \item{TimeSeriesCont}{A vector, matrix, or data frame containing continuation points for \code{TimeSeries} with actual values. Each column corresponds to one time series. Ignored if \code{NULL}.
 %%     ~~Describe \code{TimeSeriesCont} here~~
 }
-  \item{n.ahead}{Number of consecutive values which are to be predicted of each time series in \code{TimeSeries}. If \code{n.ahead} is \code{NULL}, the number of values to be predicted of each time series in \code{TimeSeries} is assumed to be equal to the number of rows in each respective time series in \code{TimeSeriesCont}. Required when \code{TimeSeriesCont} is \code{NULL}.
+  \item{n.ahead}{A numeric vector (or a single numeric value) with the number of consecutive values which are to be predicted of each respective time series in \code{TimeSeries}. If \code{n.ahead} is \code{NULL}, the number of values to be predicted of each time series in \code{TimeSeries} is assumed to be equal to the number of rows in each respective time series in \code{TimeSeriesCont}. Required when \code{TimeSeriesCont} is \code{NULL}.
 %%     ~~Describe \code{n.ahead} here~~
 }
-  \item{na.action}{A function for treating missing values in \code{TimeSeries}. The default function is \code{\link{na.omit}}, which omits any missing values found in \code{TimeSeries}.
+  \item{na.action}{A function for treating missing values in \code{TimeSeries} and \code{TimeSeriesCont}. The default function is \code{\link{na.omit}}, which omits any missing values found in \code{TimeSeries} or \code{TimeSeriesCont}.
 %%     ~~Describe \code{na.action} here~~
 }
-  \item{xreg}{A vector, matrix, data frame or times series of external regressors used for fitting all the ARIMA models.  It must have the same number of rows as \code{TimeSeries}. Ignored if \code{NULL}.
+  \item{xreg}{A list of vectors, matrices, data frames or times series of external regressors used for fitting the ARIMA models. The first component of the list contains external regressors for the first time series in \code{TimeSeries} and therefore must have the same number of rows as this respective time series. This is also valid for the second component, and so forth. Ignored if \code{NULL}.
 %%     ~~Describe \code{xreg} here~~
 }
-  \item{newxreg}{A vector, matrix, data frame or times series with new values of \code{xreg} to be used for prediction. Must have at least \code{n.ahead} rows or the number of rows in \code{TimeSeriesCont}, if \code{n.ahead} is \code{NULL}. Ignored if \code{NULL}.
+  \item{newxreg}{A list of vectors, matrices, data frames or times series with new values of \code{xreg} to be used for prediction. The first component of the list must have at least the same number of rows as the respective first value in \code{n.ahead} or, if \code{n.ahead} is \code{NULL}, the number of continuation points in the respective first time series in \code{TimeSeriesCont}. This is also valid for the second component, and so forth. Ignored if \code{NULL}.
 %%     ~~Describe \code{newxreg} here~~
 }
   \item{se.fit}{If \code{se.fit} is \code{TRUE}, the standard errors of the predictions are returned.
@@ -55,7 +55,9 @@ range.p = 0.2, ylab = NULL, xlab = NULL, main = NULL)
 \details{ See the \code{\link{arimapred}} function.
 %%  ~~ If necessary, more details than the description above ~~
 }
-\value{A vector of time series of predictions, or if \code{se.fit} is \code{TRUE}, a vector of lists, each one with the components \code{pred}, the predictions, and \code{se}, the estimated standard errors. Both components are time series. See the \code{\link{predict.Arima}} function in the stats package and the function \code{\link{arimapred}}.
+\value{A vector of time series of predictions, if the number of consecutive values predicted of each time series in \code{TimeSeries} is the same, otherwise a list of time series of predictions.
+
+If \code{se.fit} is \code{TRUE}, a vector of lists, each one with the components \code{pred}, the predictions, and \code{se}, the estimated standard errors. Both components are time series. See the \code{\link{predict.Arima}} function in the stats package and the function \code{\link{arimapred}}.
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}

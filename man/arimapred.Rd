@@ -24,7 +24,7 @@ range.p = 0.2, ylab = NULL, xlab = NULL, main = NULL)
   \item{n.ahead}{Number of consecutive values of the time series, which are to be predicted. If \code{n.ahead} is \code{NULL}, the number of consecutive values to be predicted is assumed to be equal to the number of rows in \code{timeseries.cont}. Required when \code{timeseries.cont} is \code{NULL}.
 %%     ~~Describe \code{n.ahead} here~~
 }
-  \item{na.action}{A function for treating missing values in \code{timeseries}. The default function is \code{\link{na.omit}}, which omits any missing values found in \code{timeseries}.
+  \item{na.action}{A function for treating missing values in \code{timeseries} and \code{timeseries.cont}. The default function is \code{\link{na.omit}}, which omits any missing values found in \code{timeseries} or \code{timeseries.cont}.
 %%     ~~Describe \code{na.action} here~~
 }
   \item{xreg}{A vector, matrix, data frame or times series of external regressors used for fitting the ARIMA model.  It must have the same number of rows as \code{timeseries}. Ignored if \code{NULL}.
