@@ -1,14 +1,14 @@
-\name{MAPE}
-\alias{MAPE}
+\name{MSE}
+\alias{MSE}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{MAPE error of prediction
+\title{MSE error of prediction
 %%  ~~function to do ... ~~
 }
-\description{The function calculates the MAPE error between actual and predicted values.
+\description{The function calculates the MSE error between actual and predicted values.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-MAPE(actual, prediction)
+MSE(actual, prediction)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -19,7 +19,7 @@ MAPE(actual, prediction)
 %%     ~~Describe \code{forecast} here~~
 }
 }
-\value{A numeric value of the MAPE error of prediction.
+\value{A numeric value of the MSE error of prediction.
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -32,13 +32,13 @@ MAPE(actual, prediction)
 \author{Rebecca Pontes Salles
 %%  ~~who you are~~
 }
-\seealso{\code{\link{sMAPE}}, \code{\link{MSE}}, \code{\link{NMSE}}, \code{\link{MAXError}}
+\seealso{\code{\link{NMSE}},\code{\link{MAPE}},\code{\link{sMAPE}}, \code{\link{MAXError}}
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
 data(SantaFe.A,SantaFe.A.cont)
 pred <- marimapred(SantaFe.A,n.ahead=100)
-MAPE(SantaFe.A.cont[,1], pred)
+MSE(SantaFe.A.cont[,1], pred)
 %%##---- Should be DIRECTLY executable !! ----
 %%##-- ==>  Define data, use random,
 %%##--	or do  help(data=index)  for the standard data sets.
@@ -54,6 +54,6 @@ MAPE(SantaFe.A.cont[,1], pred)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ MAPE }
+\keyword{ MSE }
 \keyword{ prediction }% __ONLY ONE__ keyword per line
 \keyword{ error }

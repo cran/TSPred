@@ -1,14 +1,14 @@
-\name{MAPE}
-\alias{MAPE}
+\name{NMSE}
+\alias{NMSE}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{MAPE error of prediction
+\title{NMSE error of prediction
 %%  ~~function to do ... ~~
 }
-\description{The function calculates the MAPE error between actual and predicted values.
+\description{The function calculates the NMSE error between actual and predicted values.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-MAPE(actual, prediction)
+NMSE(actual, prediction, train.actual)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -16,10 +16,13 @@ MAPE(actual, prediction)
 %%     ~~Describe \code{actual} here~~
 }
   \item{prediction}{A vector or univariate time series containing time series predictions that are to be compared against the values in \code{actual}.
-%%     ~~Describe \code{forecast} here~~
+%%     ~~Describe \code{prediction} here~~
+}
+  \item{train.actual}{A vector or univariate time series that was used to train the model that produced the preditions in \code{prediction}.
+%%     ~~Describe \code{prediction} here~~
 }
 }
-\value{A numeric value of the MAPE error of prediction.
+\value{A numeric value of the NMSE error of prediction.
 %%  ~Describe the value returned
 %%  If it is a LIST, use
 %%  \item{comp1 }{Description of 'comp1'}
@@ -32,13 +35,13 @@ MAPE(actual, prediction)
 \author{Rebecca Pontes Salles
 %%  ~~who you are~~
 }
-\seealso{\code{\link{sMAPE}}, \code{\link{MSE}}, \code{\link{NMSE}}, \code{\link{MAXError}}
+\seealso{\code{\link{MSE}},\code{\link{MAPE}},\code{\link{sMAPE}}, \code{\link{MAXError}}
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
 data(SantaFe.A,SantaFe.A.cont)
 pred <- marimapred(SantaFe.A,n.ahead=100)
-MAPE(SantaFe.A.cont[,1], pred)
+NMSE(SantaFe.A.cont[,1], pred, SantaFe.A[,1])
 %%##---- Should be DIRECTLY executable !! ----
 %%##-- ==>  Define data, use random,
 %%##--	or do  help(data=index)  for the standard data sets.
@@ -54,6 +57,6 @@ MAPE(SantaFe.A.cont[,1], pred)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ MAPE }
+\keyword{ NMSE }
 \keyword{ prediction }% __ONLY ONE__ keyword per line
 \keyword{ error }

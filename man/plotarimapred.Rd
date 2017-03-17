@@ -38,8 +38,8 @@ ylab = NULL, xlab = NULL, main = NULL)
 %%     ~~Describe \code{main} here~~
 }
 }
-\details{The model in \code{fit.arima} is used for prediction by the \code{\link{forecast.Arima}} function in the forecast package. The resulting \code{forecast} object is then used for plotting the predictions and their intervals by the \code{\link{plot.forecast}} function also in the forecast package.
-For more details, see the \code{\link{forecast.Arima}} and the  \code{\link{plot.forecast}} functions in the forecast package.
+\details{The model in \code{fit.arima} is used for prediction by the \code{\link{forecast.Arima}} function in the \code{forecast} package. The resulting \code{forecast} object is then used for plotting the predictions and their intervals by the \code{\link{plot.forecast}} function also in the \code{forecast} package.
+For more details, see the \code{\link{forecast.Arima}} and the  \code{\link{plot.forecast}} functions in the \code{forecast} package.
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{None.
@@ -60,7 +60,7 @@ For more details, see the \code{\link{forecast.Arima}} and the  \code{\link{plot
 }
 \examples{
 data(SantaFe.A,SantaFe.A.cont)
-fit <- auto.arima(SantaFe.A)  
+fit <- forecast::auto.arima(SantaFe.A)  
 ts.cont <- ts(SantaFe.A.cont,start=1001)
 plotarimapred(ts.cont, fit, xlim=c(1001,1100))
 %%##---- Should be DIRECTLY executable !! ----
