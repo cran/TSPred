@@ -1,4 +1,4 @@
-8d79b8c306a264ddc3cde50ea3c2162e *DESCRIPTION
+1015e91bdd010ebcb56b30cc0d5ac2e4 *DESCRIPTION
 4d799d5e3005b8020761a006a805b462 *NAMESPACE
 014a475ecf7033bbe6326e0af492d0d7 *R/MAPE.R
 43793b73d8efe209cfa2fdb9bc44e2d1 *R/MAXError.R
@@ -12,7 +12,7 @@
 a31f940d4e8c420bd12b399b1ca73133 *R/fittestArima.r
 45913412b65673ef73e1183d026ffdc2 *R/fittestArimaKF.r
 4365edd571a02442814fb1d1dd31e264 *R/fittestLM.r
-eadf2ef26b8182816b1fb034d5f3900a *R/fittestPolyR.r
+bc03d4e17f91de932d6a972292b0adf5 *R/fittestPolyR.r
 866274496393ba2f25209b5a3680a227 *R/fittestPolyRKF.r
 79d224ddee961205a4363f9a367d5fe3 *R/marimapar.R
 9c9b295c861dd7edfbc527f7a6c7c9b2 *R/marimapred.R
@@ -35,7 +35,7 @@ ce3bdae7f954e91855a765b175878d09 *data/NN5.A.rda
 5c7222dc525bc5f7aaef00c8e2b237c6 *data/SantaFe.A.rda
 cdac1b007e5b3ef8d2dff732f7fa180a *data/SantaFe.D.cont.rda
 692130e7fa909b2a8cf79716a2367bac *data/SantaFe.D.rda
-2227286a68dfb89eb7505d7a64ae79fe *inst/CITATION
+14e3ca3ee1d128d79a4b3670143393ba *inst/CITATION
 95da3fdb84cf67f4358c3f1ed006b72f *man/CATS.Rd
 0f0b70c9e5f736d97da5e76e7554e0ed *man/CATS.cont.Rd
 eae9d71a727aa79fa68c8d37a40999b9 *man/EUNITE.Loads.Rd
@@ -56,15 +56,15 @@ e7ad947e3314d596ab1a1025cf8d8311 *man/SantaFe.A.Rd
 42cd0de3eadafbdfa42e186779383de7 *man/SantaFe.A.cont.Rd
 dbffef895775abe906441607b6582801 *man/SantaFe.D.Rd
 7f56854690195d8671f9c7a6a91beb11 *man/SantaFe.D.cont.Rd
-de0793f96296f1d315d06df8de247b17 *man/TSPred-internal.Rd
-a12ba0094cbd1a3ed34722805526a43c *man/TSPred-package.Rd
+a8c80362d5e9649429cc360788128506 *man/TSPred-internal.Rd
+9fc40d1b03eff7f6561cdc69a30ebf20 *man/TSPred-package.Rd
 0406b333899fe1a9d0aa45e4b1379df2 *man/arimainterp.Rd
 cd01d5d17e4f9a12662c1f09def84e2a *man/arimapar.Rd
 a38187c9c326080d401d7dd2a76486e3 *man/arimapred.Rd
 59dc4b15175407d8901938c0de701fa4 *man/fittestArima.Rd
 e90a6b7291042c812876898a9f730997 *man/fittestArimaKF.Rd
 e1d7ceb8eabb0d4fe81567f60a0c33ca *man/fittestLM.Rd
-d438dc30a5c4fc6f499faa89d0127f2d *man/fittestPolyR.Rd
+d2b7527e565f155d29e9855883456201 *man/fittestPolyR.Rd
 6559db224eddae9927d0e3cc43b3d404 *man/fittestPolyRKF.Rd
 17b1ea325de5f3a177413266447498be *man/marimapar.Rd
 f3efed9a6cdc1df0e5fb7d1f317760e0 *man/marimapred.Rd

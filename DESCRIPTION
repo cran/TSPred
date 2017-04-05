@@ -1,8 +1,8 @@
 Package: TSPred
 Type: Package
 Title: Functions for Benchmarking Time Series Prediction
-Version: 3.0.1
-Date: 2017-03-24
+Version: 3.0.2
+Date: 2017-04-05
 Authors@R: c(person(c("Rebecca", "Pontes"),"Salles", role = c("aut", "cre","cph"),email = "rebeccapsalles@acm.org", comment = "CEFET/RJ"),
 			 person("Eduardo","Ogasawara", role = c("ths"),email = "eogasawara@ieee.org", comment = "CEFET/RJ"))
 Author: Rebecca Pontes Salles [aut, cre, cph] (CEFET/RJ), Eduardo Ogasawara [ths] (CEFET/RJ)
@@ -13,7 +13,7 @@ License: GPL (>= 2)
 BugReports: https://github.com/RebeccaSalles/TSPred/issues
 URL: https://sourceforge.net/p/gpca/wiki/TSPred/
 NeedsCompilation: no
-Packaged: 2017-03-25 00:05:29 UTC; Rebecca
+Packaged: 2017-04-05 20:15:19 UTC; Rebecca
 Depends: R (>= 2.10)
 Repository: CRAN
-Date/Publication: 2017-03-25 10:58:46 UTC
+Date/Publication: 2017-04-05 21:57:39 UTC
