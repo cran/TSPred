@@ -43,12 +43,14 @@ R.H. Shumway and D.S. Stoffer, 2010, Time Series Analysis and Its Applications: 
 %%  ~~who you are~~
 }
 
-\seealso{\code{\link{marimapar}}, \code{\link{arimapred}}, \code{\link{marimapred}}
+\seealso{\code{marimapar}, \code{\link{arimapred}}, \code{\link{marimapred}}
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
+\dontrun{
 data(SantaFe.A)
 arimapar(SantaFe.A[,1])
+}
 %%##---- Should be DIRECTLY executable !! ----
 %%##-- ==>  Define data, use random,
 %%##--	or do  help(data=index)  for the standard data sets.
